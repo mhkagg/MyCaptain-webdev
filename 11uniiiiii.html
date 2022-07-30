@@ -1,0 +1,222 @@
+<html>
+<head>
+<title>universe</title>
+<link rel="stylesheet" href="mystyle5.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/03e7296739.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="tab">
+<a class="active" href="universe.html" target="_self" alt="universe"><img class="logo" src="download.png" alt="universe" style="width:180px;height:97px;">
+</a>
+<button onclick="myFunction()"> [dark mode] </button>
+  <button class="tablinks" onclick="openPlan(event, 'customers')"> customers </button>
+  <button class="tablinks" onclick="openPlan(event, 'contact us')"> contact us </button>
+  <button class="tablinks" onclick="openPlan(event, 'about us')"> about us </button>
+</div>
+
+<div id="about us" class="tabcontent">
+<span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+  <h3>ABOUT US</h3>
+  <p>universe is an ecommerce platform, one of the top online sites to sell, Universe makes it easy to get up and running without tech skills or a huge budget.</p>
+</div>
+
+<div id="customers" class="tabcontent">
+<span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+  <h3>CUSTOMERS</h3>
+  <p>happy and fair trading is what we preach.Legal actions will be taken if not followed through</p>
+</div>
+
+<div id="contact us" class="tabcontent">
+<span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+  <h3>CONTACT US</h3>
+  <p>contact us at universe@gmail.com for help</p> 
+</div>
+
+<br>
+<fieldset>
+<p style="text-align:center;"> sale begins in</p>
+<div class="etp"><p id="demo"></p></div>
+</fieldset>
+<br>
+
+<button class="open-button" onclick="openForm()">Open Form</button>
+
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Login</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<div class="card1">
+  <img src="blackdress.webp" alt="black dress" style="width:290px; height:350px;">
+  <h3>OLive black dress</h3>
+  <p class="price">ongoing price $60</p>
+  <form action="/price_page.php">
+  <div class="boxx">
+  <input type="text" placeholder=" communicate the auction price " name="pricebox">
+  </div>
+  <br>
+  <button>M</button><button>L</button>
+  <br>
+  <div class="add">
+  <button>Add to Cart</button>
+  </div>
+  </form>
+  </div>
+  
+<div class="card1">
+  <img src="estedress.webp" alt="Este dress" style="width:290px; height:350px;">
+  <h3>Stone Este dress</h3>
+  <p class="price">ongoing price $42.5</p>
+  <form action="/price_page.php">
+  <div class="boxx">
+  <input type="text" placeholder=" communicate the auction price " name="pricebox">
+  </div>
+  <br>
+  <button>XS</button><button>S</button><button>XL</button>
+  <br>
+  <div class="add">
+  <button>Add to Cart</button>
+  </div>
+  </form>
+  </div>
+  
+  <div class="card1">
+  <img src="skirt.webp" alt="leather skirt" style="width:290px; height:350px;">
+  <h3>MAUE Leather Skirt</h3>
+  <p class="price">ongoing price $30</p>
+  <form action="/price_page.php">
+  <div class="boxx">
+  <input type="text" placeholder=" communicate the auction price " name="pricebox">
+  </div>
+  <br>
+  <button>S</button>
+  <br>
+  <div class="add">
+  <button>Add to Cart</button>
+  </div>
+  </form>
+  </div>
+  
+  <div class="card1">
+  <img src="sheer.jpg" alt="sheer blouse" style="width:295px; height:350px;">
+  <h3>Britnay Sheer Blouse</h3>
+  <p class="price">ongoing price $25</p>
+  <form action="/price_page.php">
+  <div class="boxx">
+  <input type="text" placeholder=" communicate the auction price " name="pricebox">
+  </div>
+  <br>
+  <button>S</button><button>M</button><button>L</button>
+  <br>
+  <div class="add">
+  <button>Add to Cart</button>
+  </div>
+  </form>
+  </div>
+
+<br>
+
+​<div class="tablea">
+<table style="background-color:#455e59">
+<tr>
+<th>
+<a href="universe.html" target="_self" alt="universe">
+<img src="download.png" alt="universe" style="width:190px;height:120px;">
+</a>
+</th>
+<th>
+<p style="font-family: Lucida Console;font-size:60px;color:white;">
+the universe is in your hands
+</p>
+</th>
+<th>
+<a href="https://www.facebook.com" target="_self" alt="facebook">
+<img src="download (2).png" style="width:30px;height:30px;"> 
+</a>
+</th>
+<th>
+<a href="https://www.instagram.com" target="_self" alt="instagram">
+<img src="download.jpg" style="width:30px;height:30px;"> 
+</a>
+</th>
+<th>
+<a href="mailto:universe@gmail.com" target="_self" alt="email">
+<img src="download (1).png" style="width:30px;height:30px;"> 
+</a>
+</th>
+</tr>
+</table>
+</div>
+
+
+
+
+<script>
+
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+
+var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
+
+var x = setInterval(function() {
+
+  var now = new Date().getTime();
+    
+  var distance = countDownDate - now;
+    
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+
+function openPlan(evt, Plan) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(Plan).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+document.getElementById("defaultOpen").click();
+
+</script>
+
+</body>
+</html>
